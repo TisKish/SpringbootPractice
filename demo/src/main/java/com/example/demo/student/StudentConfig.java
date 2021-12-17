@@ -17,19 +17,17 @@ public class StudentConfig {
 			1L,
 			"Harry",
 			"harry.potter@gmail.com",
-			LocalDate.of(2000, Month.JANUARY, 5),
-			21
+			LocalDate.of(2000, Month.JANUARY, 5)
             );
 
             Student ron = new Student(
 			// Id is omitted here because it will be auto generated for us
 			"Ron",
 			"ron.weasley@gmail.com",
-			LocalDate.of(2001, Month.JANUARY, 5),
-			21
+			LocalDate.of(2001, Month.JANUARY, 5)
             );
 
-            // This will save the above into our DB
+            // This will save the above into our DB as it loads up
             repository.saveAll(List.of(harry, ron));
         };
     }
